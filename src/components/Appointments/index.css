@@ -1,0 +1,112 @@
+/* Write your CSS here */
+.bg-container {
+  background: linear-gradient(#8b5cf6, skyblue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.appointment-card {
+  background-color: white;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container,
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .appointment-card {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .form-container,
+  .image-container {
+    flex: 1 1 50%;
+    margin-bottom: 0;
+  }
+
+  .separator {
+    flex-basis: 90%;
+    width: 90%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .image {
+    width: 230px;
+  }
+}
+
+input {
+  border-radius: 6px;
+  margin: 10px;
+  outline: none;
+  cursor: pointer;
+  border-width: 0px;
+  background-color: bisque;
+  padding: 10px;
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  input {
+    width: 150px;
+  }
+}
+
+.button {
+  background-color: #8b5cf6;
+  color: aliceblue;
+  border-width: 0px;
+  border-radius: 8px;
+  width: 120px;
+  height: 35px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: blue;
+}
+
+.separator {
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.appointment-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.bottom-container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 100%;
+}
